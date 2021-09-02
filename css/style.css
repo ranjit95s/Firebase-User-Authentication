@@ -1,0 +1,255 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: #e84118;
+}
+
+/* ---------navigation css start---------------- */
+
+    body {
+        min-height: fit-content;
+        background-color: #0a88e9;
+    }
+
+    nav{
+        /* background-color: green; */
+        min-height: 3.5rem;
+    }
+
+    .outer-nav {
+        padding: 5px;
+        background: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 17.5px);
+    -webkit-backdrop-filter: blur( 17.5px);
+        position: fixed;
+        width: 100%;
+    }
+
+    .inner-nav {
+        padding: 5px;
+        /* background-color: indianred; */
+        display: flex;
+        /* flex-direction: row; */
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 15px;
+
+    }
+
+    .left-head {
+        font-size: 2rem;
+        cursor: pointer;
+        font-weight: 600;
+        color: var(--red);
+        font-family: 'Reggae One', cursive;
+    }
+
+    .left-head span {
+        color: black;
+        font-family: 'Reggae One', cursive;
+    }
+
+    .right-head ul li {
+        display: inline;
+        margin: 20px;
+        font-size: 1.5rem;
+    }
+    .right-head ul li a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+
+    .right-head ul li:hover >a  {
+        color: var(--red);
+    }
+
+    .img-base{
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+        background: white;
+    }
+
+
+/* ---------navigation css end---------------- */
+
+/* ---------index page css start-------------- */
+
+    .header .main-title {
+        text-align: center;
+        margin-top: 25px;
+        font-size: 2rem;
+        font-style: italic;
+    }
+
+/* ---------index page css end-------------- */
+
+/* ------------------sign-up/sign-in page css start */
+
+.container {
+    /* background-color: violet; */
+    width: 80%;
+    margin: auto auto;
+}
+
+.container > h5 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 25px;
+    font-style: oblique;
+}
+
+.outer-sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 17.5px);
+    -webkit-backdrop-filter: blur( 17.5px);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 80%;
+    font-size: 3rem;
+}
+
+.outer-sign-up .form ul {
+    list-style: none;
+}
+
+.outer-sign-up .form ul li i {
+    font-size: 1.4rem;
+    color: rgb(109, 109, 109);
+    margin-right: 5px;
+}
+
+.outer-sign-up .form li  input[type="text"] , .outer-sign-up .form li  input[type="email"], .outer-sign-up .form li  input[type="password"]  {
+    width: 85%;
+    padding: 5px;
+    border: 2px solid #ccc;
+    height: 2.5rem;
+    border-radius: 6px;
+    margin: 8px auto;
+    transition: all 100ms ease-in;
+}
+
+.outer-sign-up .form li  input[type="submit"] , .form li  input[type="button"]{
+    /* margin-left: 5px; */
+    border: 2px solid #333;
+    border-radius: 15px;
+    padding: 4px 15px;
+    background: #0a88e9;
+    color: white;
+    font-weight: bold;
+    /* width: ; */
+    text-align: center !important;
+    font-size: 1rem;
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* ------------------sign-up/sign-in page css end--------------- */
+
+/* ------------------home page css start-------------- */
+
+    #user .container {
+        width: 80%;
+        margin: auto auto;
+        text-align: center;
+        margin-top: 30px;
+        background: rgb(255, 211, 211);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+        backdrop-filter: blur( 17.5px);
+        -webkit-backdrop-filter: blur( 17.5px);
+        border-radius: 10px;
+        padding: 10px 20px;
+    }
+
+    #user .img img {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    #user .container h1 {
+        font-size: 2rem;
+        text-align: start;
+    }
+
+    #user .user-details h2 {
+        font-size: 2rem;
+    }
+    #user .user-details h3 {
+        font-size: 1.8rem;
+        margin-top: 10px;
+        font-style: oblique;
+    }
+
+
+/* ------------------home page css end-------------- */
+
+/* ------------generate user image based on first name start-----------*/
+
+#profileImage {
+    /* margin-top: 200px; */
+    width: 15%;
+    height: 150px;
+    border-radius: 50%;
+    background: #512DA8;
+    font-size: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 150px;
+    margin: 20px auto;
+  }
+
+/* ------------generate user image based on first name end-----------*/
+
+/* ----------------error msg start ------------- */
+
+    .msg {
+        position: relative;
+        font-size: 1rem;
+        background: rgb(216, 216, 216);
+        box-shadow: 0 8px 16px 0 rgba( 31, 38, 135, 0.37);
+        backdrop-filter: blur( 17.5px);
+        -webkit-backdrop-filter: blur( 17.5px);
+        padding: 10px 20px;
+        color: black;
+        border-radius: 15px;
+        width: 50%;
+        margin: auto;
+        height: 4rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .msg h2 {
+        font-size: 1.1rem;
+    }
+
+    .msg .close {
+        position: absolute;
+        top: 2px;
+        right: 1px;
+        font-size: 20px;
+        /* background: #ff7a7a; */
+        padding: 3px;
+        cursor: pointer;
+    }
+
+
+/* ----------------error msg end ------------- */
